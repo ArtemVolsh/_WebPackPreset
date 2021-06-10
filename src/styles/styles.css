@@ -1,0 +1,15 @@
+@import "~normalize.css";
+
+
+.container {
+	min-width: 1200px;
+
+	font-family: "Montserrat", sans-serif;
+
+	padding: 2rem;
+	margin: 0 auto;
+}
+
+h1 {
+	text-align: center;
+}
