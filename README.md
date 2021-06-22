@@ -1,5 +1,8 @@
-This is a basic WebPack setup with next plugins included:
-  clean-webpack-plugin - 4.0.0-alpha.0    
+**This is a basic WebPack setup**
+
+Plugins:
+
+	clean-webpack-plugin - 4.0.0-alpha.0    
 	html-webpack-plugin - 5.3.1    
 	css-loader - 5.2.6    
 	xml-loader - 1.2.1    
