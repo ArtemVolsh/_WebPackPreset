@@ -4,7 +4,7 @@
 	"description": "Webpack Preset Setup",
 	"private": true,
 	"scripts": {
-		"dev": "webpack --mode development",
+		"dev": "webpack-dev-server --open --mode development",
 		"build": "webpack --mode production",
 		"watch": "webpack --mode development --watch"
 	},
@@ -17,15 +17,18 @@
 	"license": "ISC",
 	"devDependencies": {
 		"clean-webpack-plugin": "^4.0.0-alpha.0",
+		"html-webpack-plugin": "^5.3.1",
 		"css-loader": "^5.2.6",
+		"xml-loader": "^1.2.1",
 		"csv-loader": "^3.0.3",
 		"file-loader": "^6.2.0",
-		"html-webpack-plugin": "^5.3.1",
-		"papaparse": "^5.3.1",
 		"style-loader": "^2.0.0",
+		"sass-loader": "^12.1.0",
+		"node-sass": "^6.0.0",
+		"papaparse": "^5.3.1",
 		"webpack": "^5.38.1",
 		"webpack-cli": "^4.7.2",
-		"xml-loader": "^1.2.1"
+		"webpack-dev-server": "^3.11.2"
 	},
 	"dependencies": {
 		"jquery": "^3.6.0",

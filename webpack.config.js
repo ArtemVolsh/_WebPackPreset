@@ -11,10 +11,14 @@ module.exports = {
 	mode: 'development',
 	output: {
 		filename: '[name].[contenthash].js',
-		path: path.resolve(__dirname, 'dist')
+		path: path.resolve(__dirname, 'dist'),
+		publicPath: 'dist'
+	},
+	devServer: {
+		overlay: true
 	},
 	resolve: {
-		extensions: ['.js','.json','.png'],
+		extensions: ['.js', '.json', '.png'],
 		alias: {
 			'@models': path.resolve(__dirname, 'src/models')
 		}
@@ -47,6 +51,17 @@ module.exports = {
 				test: /\.csv$/,
 				use: ['csv-loader']
 			},
+			{
+				test: /\.s[ac]ss$/i,
+				use: [
+					// Creates `style` nodes from JS strings
+					"style-loader",
+					// Translates CSS into CommonJS
+					"css-loader",
+					// Compiles Sass to CSS
+					"sass-loader",
+				],
+			}
 		]
 	}
 }

@@ -17,6 +17,13 @@ function createAnalytics() {
 				return 'Analytics is destroyed. Total clicks = ${counter}'
 			}
 			return counter
+		},
+
+		showClicks() {
+			if (!destroyed) {
+				return 'Click\'s number = ${counter}'
+			}
+			return counter
 		}
 	}
 }
